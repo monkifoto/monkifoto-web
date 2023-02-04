@@ -1,19 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
-:root {
-    --background: rgba(0, 214, 170, .85);
-  }
-  
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  body {
-      margin: 0;
-      background: #222;
-      font-family: 'Work Sans', sans-serif;
-      font-weight: 400;
-  }
 
 .content{
     height: 200vh;
@@ -23,4 +8,5 @@
     background-size: cover;
     display: grid;
     place-items: center;
+    width: 100%;
 }
