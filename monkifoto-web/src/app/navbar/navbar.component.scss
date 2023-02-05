@@ -1,11 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,600');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,600');
+@import url('https://fonts.googleapis.com/css?family=Bellefair:400');
 
 :root {
-    --background: rgba(0, 214, 170, .85);
+    --background: rgba(255, 255, 255, .2);
+    --gap: 1rem;
+    --clr-dark: 230 35% 7% ;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100% ;
+
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
   }
+
+
+  .logo {
+    font-family: var(---ff-sans-cond);
+    font-size: var(--fs-900);
+    color: var(--clr-white);
+  }
+
 
   header {
     background: var(--background);
+    background: transparent;
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -58,8 +85,8 @@ nav {
     text-align: left;
     top: 100%;
     left: 0;
-    /* background: var(--background); */
-    background: hsl(0 0% 100% / 0.1);
+    background: var(--background); 
+    // background: hsl(0 0% 100% / 0.1);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -99,72 +126,72 @@ nav a {
     transition: opacity 250ms ease-in-out 250ms;
   }
 
-  @media screen and (min-width: 500px) {
-    .nav-toggle-label {
-      display: none;
-    }
+//   @media screen and (min-width: 500px) {
+//     .nav-toggle-label {
+//       display: none;
+//     }
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-      }
+//     header {
+//         display: grid;
+//         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+//       }
       
-      .logo {
-        grid-column: 2 / 3;
-      }
+//       .logo {
+//         grid-column: 2 / 3;
+//       }
 
     
-    nav {
-         all: unset; 
-        /* this causes issues with Edge, since it's unsupported */
+//     nav {
+//          all: unset; 
+//         /* this causes issues with Edge, since it's unsupported */
         
-        /* the following lines are not from my video, but add Edge support */
-        position: relative;
-        text-align: left;
-        transition: none;
-        transform: scale(1,1);
-        background: none;
-        top: initial;
-        left: initial;
-        /* end Edge support stuff */
+//         /* the following lines are not from my video, but add Edge support */
+//         position: relative;
+//         text-align: left;
+//         transition: none;
+//         transform: scale(1,1);
+//         background: none;
+//         top: initial;
+//         left: initial;
+//         /* end Edge support stuff */
         
-        grid-column: 3 / 4;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-      }
+//         grid-column: 3 / 4;
+//         display: flex;
+//         justify-content: flex-end;
+//         align-items: center;
+//       }
       
 
-    nav ul {
-        display: flex;
-      }
+//     nav ul {
+//         display: flex;
+//       }
       
-      nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
-      }
+//       nav li {
+//         margin-left: 3em;
+//         margin-bottom: 0;
+//       }
       
-      nav a {
-        opacity: 1;
-        position: relative;
-      }
+//       nav a {
+//         opacity: 1;
+//         position: relative;
+//       }
 
-    nav a::before {
-        content: '';
-        display: block;
-        height: 5px;
-        background: black;
-        position: absolute;
-        top: -.75em;
-        left: 0;
-        right: 0;
-        transform: scale(0, 1);
-        transform-origin: left;
-        transition: transform ease-in-out 250ms;
-      }
+//     nav a::before {
+//         content: '';
+//         display: block;
+//         height: 5px;
+//         background: black;
+//         position: absolute;
+//         top: -.75em;
+//         left: 0;
+//         right: 0;
+//         transform: scale(0, 1);
+//         transform-origin: left;
+//         transition: transform ease-in-out 250ms;
+//       }
       
 
-    nav a:hover::before{
-    transform: scale(1,1);
-    }
-}
+//     nav a:hover::before{
+//     transform: scale(1,1);
+//     }
+// }
