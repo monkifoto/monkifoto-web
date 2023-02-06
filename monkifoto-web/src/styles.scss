@@ -2,10 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,600');
 @import url('https://fonts.googleapis.com/css?family=Bellefair:400');
 
-
-
 :root {
-    --background: rgba(255, 255, 255, .2);
+   
     --gap: 1rem;
     --clr-dark: 230 35% 7% ;
     --clr-accent: 231 77% 90%;
@@ -87,6 +85,11 @@ select{
     gap: var (--gap, 1rem )
 }
 
+.flow >  *:where(:not(:first-child)) {
+  margin-top: var(--flow-space,1rem);
+
+}
+
 .container{
     padding-inline: 2em;
     max-width: 80rem;
@@ -144,3 +147,19 @@ select{
 .fs-600 { 
     line-height: 1.1;
 }
+
+
+/* 
+.underline-indicators > * {
+  padding: var(--underline-gap, 1rem) 0;
+  border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  border-color: hsl( var(--clr-white) / .25);
+}
+
+.underline-indicators > .active{
+  border-color: hsl( var(--clr-white) / 1);
+} */
