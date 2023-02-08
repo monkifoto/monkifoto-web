@@ -10,6 +10,10 @@ import { RealEstateComponent } from './real-estate/real-estate.component';
 import { InquireComponent } from './inquire/inquire.component';
 import { HeadshotsComponent } from './headshots/headshots.component';
 import { FooterComponent } from './footer/footer.component';
+import { SplitPageModule } from './split-page/split-page.module';
+import { PortfolioComponent } from './split-page/portfolio/portfolio.component';
+import { MainPortfolioComponent } from './split-page/main-portfolio/main-portfolio.component';
+import { SecondaryPortfolioComponent } from './split-page/secondary-portfolio/secondary-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SplitPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

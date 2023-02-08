@@ -1,0 +1,7 @@
+.portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-gap: 1px;
+    width: 100vw;
+    height: 80vh;
+}

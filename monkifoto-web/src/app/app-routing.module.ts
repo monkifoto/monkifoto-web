@@ -4,6 +4,7 @@ import { HeadshotsComponent } from './headshots/headshots.component';
 import { HomeComponent } from './home/home.component';
 import { InquireComponent } from './inquire/inquire.component';
 import { RealEstateComponent } from './real-estate/real-estate.component';
+import { PortfolioComponent } from './split-page/portfolio/portfolio.component';
 import { WeddingGalleryComponent } from './wedding-gallery/wedding-gallery.component';
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:'real-estate', component: RealEstateComponent},
   {path:'inqure', component:InquireComponent},
   {path:'headshots', component: HeadshotsComponent},
-  {path:'home', component: HomeComponent}
+  {path:'home', component: HomeComponent},
+  {path: 'portfolio', component: PortfolioComponent}
 ];
 
 @NgModule({

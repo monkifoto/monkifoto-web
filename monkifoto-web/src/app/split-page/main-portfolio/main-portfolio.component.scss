@@ -1,0 +1,29 @@
+.main-portfolio{
+    background-image: url(http://source.unsplash.com/2048x1024/?multifamily);
+    background-color: hsl(var(--clr-dark));
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    padding: 1rem;
+
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    transition: .5s;
+    background-color: #fff;
+    color: black;
+}
+
+a:hover{
+    color: #Fff;
+    background-color: transparent;
+    border: 1px solid #fff ;
+    border-style: inset;
+}
