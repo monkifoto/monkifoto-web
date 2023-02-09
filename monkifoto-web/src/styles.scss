@@ -149,6 +149,12 @@ select{
 }
 
 
+.page-frame{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
 /* 
 .underline-indicators > * {
   padding: var(--underline-gap, 1rem) 0;

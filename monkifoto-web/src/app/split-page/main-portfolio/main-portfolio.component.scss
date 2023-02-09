@@ -1,16 +1,15 @@
 .main-portfolio{
-    background-image: url(http://source.unsplash.com/2048x1024/?multifamily);
-    background-color: hsl(var(--clr-dark));
+    position: relative;
+    background-image: url(http://source.unsplash.com/1024x768/?multifamily);
+    background-color: gray;//hsl(var(--clr-white));
     background-blend-mode: multiply;
     background-size: cover;
     display: grid;
     place-items: center;
-    height: 100vh;
-    padding: 3rem;
-
+    height: 90vh;
 }
 
-a{
+.buttonPortfolio {
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -21,9 +20,147 @@ a{
     color: black;
 }
 
-a:hover{
+.buttonPortfolio:hover{
     color: #Fff;
     background-color: transparent;
     border: 1px solid #fff ;
     border-style: inset;
 }
+
+.link {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: hsl(var(--clr-dark));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform 250ms ease-in;
+  }
+  
+  .link:hover::after{
+      transform:scaleX(1);
+      transform-origin:left;
+  }
+  
+
+.card2 {
+    margin-top:3rem;
+    padding: 2rem;
+    color: white;
+    text-align: left;
+  }
+
+.card2__title {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .card2-title-text {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+  
+  .card2-title-text::after {
+    content: "";
+    position: absolute;
+    transform: translate(10em, 10em) 250ms ease-in;
+  }
+  
+  .card2:hover .card2-title-text::after {
+    transform: translate(10em, 10em) 250ms ease-in;
+  }
+
+//   .main-portfolio::after {
+//     transform: scaleX(1);
+//     width: 100vw;
+//   }
+
+  .card2:hover .main-portfolio{
+    transform: scaleX(1.5);
+    width: 100vw;
+  }
+  
+  .card2__title::after {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    left: -6rem;
+    bottom: -0.25rem;
+    width: calc(100% + 12rem);
+    background: #FFF;
+    opacity: 40%;
+    z-index: -1;
+    -webkit-transform: scaleX(0.075);
+    transform: scaleX(0.075);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  
+  }
+  
+  .card2:hover .card2__title::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+  .card2__body {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+ 
+  }
+
+  .card2__body a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: transparent;
+    transition: color 150ms 450ms;
+  }
+
+  .card2__body li{
+    list-style: none;
+  }
+  
+  .card2__body::after {
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    bottom: -0.75rem;
+    left: -0.75em;
+    right: -0.75em;
+    background: white;
+    opacity: 40%;
+    z-index: -1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+     transition: -webkit-transform 250ms ease-in 250ms;
+     transition: transform 250ms ease-in 250ms;
+     transition: transform 250ms ease-in 250ms, -webkit-transform 250ms ease-in 250ms;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+  
+  
+  
+  .card2:hover .card2__body a {
+    color: #FFF;
+    //transition: transform 250ms ease-in 250ms;
+  }
+
+  .card2:hover .card2__body::after {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
