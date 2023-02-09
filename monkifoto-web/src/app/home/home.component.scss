@@ -1,12 +1,62 @@
 @import "/src/styles.scss";
 
 .content{
-    height: 200vh;
-    background-image: url(http://source.unsplash.com/2048x1024/?cars);
+    // height: 200vh;
+    // background-image: url(http://source.unsplash.com/2048x1024/?cars);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: hsl(var(--clr-dark));
     background-blend-mode: multiply;
     background-size: cover;
-    display: grid;
-    place-items: center;
+}
+
+.section{
+    height: 80vh;
+}
+
+.section__1{
+    background: #888;
+    background-image: url(http://source.unsplash.com/2048x1024/?cars);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.section__2{
+    background: #777;
+    background-image: url(http://source.unsplash.com/2048x1024/?cars);
+    background-blend-mode: multiply;
+    background-size: cover;
    
+}
+
+.section__3{
+    background: #666;
+    background-image: url(http://source.unsplash.com/2048x1024/?cars);
+    background-blend-mode: multiply;
+    background-size: cover;
+   
+}
+
+.section__4{
+    background: #555;
+    background-image: url(http://source.unsplash.com/2048x1024/?cars);
+    background-blend-mode: multiply;
+    background-size: cover;
+ 
+}
+
+.section__1:hover{
+    width: 100vw !important;
+}
+
+.section__2:hover{
+    width: 100vw !important;
+}
+
+.section__3:hover{
+    width: 100vw !important;
+}
+.section__4:hover{
+    width: 100vw !important;
 }
