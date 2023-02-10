@@ -3,60 +3,76 @@
 .content{
     // height: 200vh;
     // background-image: url(http://source.unsplash.com/2048x1024/?cars);
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: hsl(var(--clr-dark));
-    background-blend-mode: multiply;
-    background-size: cover;
+    // position: relative;
+     //display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // background-color: hsl(var(--clr-dark));
+    // background-blend-mode: multiply;
+    // background-size: cover;
+    display: flex;
+    flex-grow: 1;
+    width: 100vw;
+    height: 100vh;
 }
 
 .section{
-    height: 80vh;
+    background: #888;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    flex-direction: row;
+    background-blend-mode: multiply;
+    transition-duration: 500ms;
+    transition-property: width;
+    width: 25vw;
+  //height: 200px;
 }
 
 .section__1{
-    background: #888;
-    background-image: url(http://source.unsplash.com/2048x1024/?cars);
-    background-blend-mode: multiply;
-    background-size: cover;
+    background-image: url(http://source.unsplash.com/3000x1024/?cars);
 }
 
 .section__2{
-    background: #777;
-    background-image: url(http://source.unsplash.com/2048x1024/?cars);
-    background-blend-mode: multiply;
-    background-size: cover;
-   
+    background-image: url(http://source.unsplash.com/2300x1024/?cars);
 }
 
 .section__3{
-    background: #666;
     background-image: url(http://source.unsplash.com/2048x1024/?cars);
-    background-blend-mode: multiply;
-    background-size: cover;
-   
 }
 
 .section__4{
-    background: #555;
     background-image: url(http://source.unsplash.com/2048x1024/?cars);
-    background-blend-mode: multiply;
-    background-size: cover;
- 
 }
 
-.section__1:hover{
-    width: 100vw !important;
+.section:hover{
+    transform-origin: left;
+    width: 100% !important;
+    transition-timing-function: ease-in-out;
+    overflow-y: visible;
 }
 
-.section__2:hover{
-    width: 100vw !important;
-}
 
-.section__3:hover{
-    width: 100vw !important;
-}
-.section__4:hover{
-    width: 100vw !important;
-}
+// .section__1:hover{
+//     transform-origin: left;
+//     //transform: scaleX(2);
+//     width: 100% !important;
+//     transition-timing-function: linear;
+// }
+
+// .section__2:hover{
+//     transform-origin: left;
+//     //transform: scaleX(2);
+//     width: 100% !important;
+//     transition-timing-function: linear;
+// }
+
+// .section__3:hover{
+//     width: 100vw !important;
+// }
+// .section__4:hover{
+//     width: 100vw !important;
+// }
