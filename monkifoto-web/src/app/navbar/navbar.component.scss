@@ -143,6 +143,7 @@ nav a:hover {
 
     grid-column: 3 / 4;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
   }
@@ -181,4 +182,26 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+}
+
+
+.primary-navigation {
+  --underline-gap: 2rem;
+  position: fixed;
+  z-index: 1000;
+  inset: 0 0 0 20%;
+  background: lightgreen;
+  list-style: none;
+  padding: min(20rem,10vh) 2rem;
+  margin: 2rem;
+  flex-direction: column;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: .5em;
 }

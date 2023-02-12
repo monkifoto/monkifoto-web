@@ -10,10 +10,10 @@ import { WeddingGalleryComponent } from './wedding-gallery/wedding-gallery.compo
 const routes: Routes = [
   {path:'wedding-gallery', component: WeddingGalleryComponent},
   {path:'real-estate', component: RealEstateComponent},
-  {path:'inqure', component:InquireComponent},
+  {path:'inquire', component:InquireComponent},
   {path:'headshots', component: HeadshotsComponent},
   {path:'home', component: HomeComponent},
-  {path: 'portfolio', component: PortfolioComponent}
+  {path:'portfolio', component: PortfolioComponent}
 ];
 
 @NgModule({
