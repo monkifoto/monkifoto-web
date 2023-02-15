@@ -1,19 +1,8 @@
 @import "/src/styles.scss";
 
 .content{
-    // height: 200vh;
-    // background-image: url(http://source.unsplash.com/2048x1024/?cars);
-    // position: relative;
-     //display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 1fr;
-    // background-color: hsl(var(--clr-dark));
-    // background-blend-mode: multiply;
-    // background-size: cover;
+    margin-top: 5rem;
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    width: 100vw;
-    height: 100vh;
 }
 
 .section_title {
@@ -29,15 +18,15 @@
     background-position: center center;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;
     flex-direction: row;
     background-blend-mode: multiply;
-    transition-duration: 500ms;
-    transition-property: width;
-    width: 25vw;
+    transition-duration: 1000ms;
+    transition-property: all;
+    width: 20vw;
   //height: 200px;
 }
 
@@ -51,27 +40,37 @@
 }
 
 .section__3{
-    background-image: url("../../assets/images/real-estate/DJI_0789.jpg");
+    background-image: url(http://source.unsplash.com/2048x1024/?studio);
+    
 }
 
 .section__4{
-    background-image: url(http://source.unsplash.com/2048x1024/?cars);
+    background-image: url("../../assets/images/real-estate/DJI_0789.jpg");
 }
+.section__5{
+    background-image: url("../../assets/images/landscapes/_MKY3213-HDR.jpg");
+}
+
 
 .section:hover{
-    transform-origin: left;
-    width: 100% !important;
+    transform-origin: center;
+    //width: 100% !important;
     width: 100vw;
+    transform: scale(1.2);
     transition-timing-function: ease-in-out;
     background-blend-mode: normal;
+    z-index: 1;
 
 }
-
 
 .link {
     color: hsl(var(--clr-white));
     text-decoration: none;
     position: relative;
+    // border: 1px solid hsl(var(--clr-white));
+    // padding: 2rem;
+    // margin: 2rem;
+
   }
   
   .link::after {
@@ -85,10 +84,65 @@
     transform: scaleX(0);
     transform-origin: right;
     transition:transform 250ms ease-in;
+    z-index: -1;
   }
   
   .link:hover::after{
       transform:scaleX(1);
       transform-origin:left;
   }
-  
+
+@media (max-width:35rem){
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section{
+        background: #888;
+        background-size: cover;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+        flex-direction: row;
+        background-blend-mode: multiply;
+        transition-duration: 500ms;
+        transition-property: all;
+        width: 100vw;
+      //height: 200px;
+    }
+
+    .section_title {
+        font-size: 1rem;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .section__1{
+        background-image: url("../../assets/images/wedding-portfolio/MKY01004-Edit.jpg");
+    
+    }
+    
+    .section__2{
+        background-image: url("../../assets/images/headshots/MKY08729-Edit.jpg");
+    }
+    
+    .section__3{
+        background-image: url(http://source.unsplash.com/2048x1024/?studio);
+        
+    }
+    
+    .section__4{
+        background-image: url("../../assets/images/real-estate/DJI_0789.jpg");
+    }
+    .section__5{
+        background-image: url("../../assets/images/landscapes/_MKY3213-HDR.jpg");
+    }
+}
+    

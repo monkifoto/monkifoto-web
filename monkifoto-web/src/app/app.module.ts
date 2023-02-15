@@ -14,6 +14,7 @@ import { SplitPageModule } from './split-page/split-page.module';
 import { PortfolioComponent } from './split-page/portfolio/portfolio.component';
 import { MainPortfolioComponent } from './split-page/main-portfolio/main-portfolio.component';
 import { SecondaryPortfolioComponent } from './split-page/secondary-portfolio/secondary-portfolio.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SecondaryPortfolioComponent } from './split-page/secondary-portfolio/se
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SplitPageModule
+    SplitPageModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
