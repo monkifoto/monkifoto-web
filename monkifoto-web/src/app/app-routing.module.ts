@@ -8,6 +8,7 @@ import { PortfolioComponent } from './split-page/portfolio/portfolio.component';
 import { WeddingGalleryComponent } from './wedding-gallery/wedding-gallery.component';
 
 const routes: Routes = [
+  {path:'', component:HomeComponent}, // Default page
   {path:'wedding-gallery', component: WeddingGalleryComponent},
   {path:'real-estate', component: RealEstateComponent},
   {path:'inquire', component:InquireComponent},

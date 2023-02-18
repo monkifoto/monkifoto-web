@@ -1,12 +1,17 @@
 @import "/src/styles.scss";
 
-body{
-    margin-inline: auto;
-}
-
 .masterContainer{
     height: 100vh;
-    border: 2px solid green;
+    //border: 2px solid green;
+}
+
+.pageFrame{
+    margin-top: 1rem;
+    //border: 2px solid orange;
+}
+
+.navigationContainer{
+      // border: 2px solid purple;
 }
 
 app-footer{

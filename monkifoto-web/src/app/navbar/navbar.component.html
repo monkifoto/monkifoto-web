@@ -1,83 +1,20 @@
-<header>
-  <h1 class="logo">&lt;click/&gt;</h1>
-  <input id="nav-toggle" type="checkbox" aria-controls="primary-navigation" aria-expanded="false" class="nav-toggle" />
+<header class="primary-header flex">
+  <div>
+    <h1 class="logo">&lt;click/&gt;</h1>
+  </div>
+  <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
   <nav>
-    <ul id="primary-navigation" class="primary-navigation underline-indicators flex">
-      <li>
-        <h2 class="numbered-title">
-          <span>01 </span>
-          <a
-            class="uppercase text-white letter-spacing-2 ff-sans-cond"
-            href="#"
-            routerLink="/home"
-            routerLinkActive="active"
-            >Home</a
-          >
-        </h2>
-      </li>
-      <li>
-        <h2 class="numbered-title">
-          <span>02 </span>
-          <a
-            href="#"
-            class="uppercase text-white letter-spacing-2"
-            routerLink="/headshots"
-            routerLinkActive="active"
-            >Headshots</a
-          >
-        </h2>
-      </li>
-      <li>
-        <h2 class="numbered-title">
-          <span>03 </span>
-          <a
-            href="#"
-            class="uppercase text-white letter-spacing-2"
-            routerLink="/wedding-gallery"
-            routerLinkActive="active"
-            >Weddings</a
-          >
-        </h2>
-      </li>
-      <li>
-        <h2 class="numbered-title">
-          <span>04 </span>
-          <a
-            href="#"
-            class="uppercase text-white letter-spacing-2"
-            routerLink="/real-estate"
-            routerLinkActive="active"
-            >Real Estate</a
-          >
-        </h2>
-      </li>
-      <li>
-        <h2 class="numbered-title">
-          <span>05 </span>
-          <a
-            href="#"
-            class="uppercase text-white letter-spacing-2"
-            routerLink="/portfolio"
-            routerLinkActive="active"
-            >Portfolio</a
-          >
-        </h2>
-      </li>
-      <li>
-        <h2 class="numbered-title">
-          <span>06 </span>
-          <a
-            href="#"
-            class="uppercase text-white letter-spacing-2 underline-indicators"
-            routerLink="/inquire"
-            routerLinkActive="active"
-            >Inquire</a
-          >
-        </h2>
-      </li>
-    </ul>
+      <ul id="primary-navigation" class="primary-navigation underline-indicators flex">
+          <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#"  routerLink="/home" routerLinkActive="active"><span>00</span>Home</a>
+          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#"  routerLink="/headshots" routerLinkActive="active"><span>01</span>Headshots</a>
+          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#"  routerLink="/wedding-gallery" routerLinkActive="active"><span>02</span>Weddings</a>
+          <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#"  routerLink="/real-estate" routerLinkActive="active"><span>03</span>Real Estate</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#"  routerLink="/portfolio" routerLinkActive="active"><span>04</span>Portfolio</a>
+              <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#"  routerLink="/inquire" routerLinkActive="active"><span>05</span>Inquire</a>
+      </ul>
   </nav>
-  <label for="nav-toggle" class="nav-toggle-label">
-    <span></span>
-  </label>
 </header>
+
+
+ 
+  

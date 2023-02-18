@@ -1,7 +1,7 @@
 @import "/src/styles.scss";
 
 .content{
-    margin-top: 5rem;
+    margin-top: 0;
     display: flex;
 }
 
@@ -18,7 +18,7 @@
     background-position: center center;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;
@@ -31,7 +31,7 @@
 }
 
 .section__1{
-    background-image: url(http://source.unsplash.com/2048x1024/?wedding);
+    background-image: url("../../assets/images/wedding-portfolio/MKY01004-Edit.jpg");
 
 }
 
@@ -125,7 +125,7 @@
     }
 
     .section__1{
-        background-image: url(http://source.unsplash.com/2048x1024/?wedding);
+        background-image: url("../../assets/images/wedding-portfolio/MKY01004-Edit.jpg");
     
     }
     
