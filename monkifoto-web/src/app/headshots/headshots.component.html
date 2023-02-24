@@ -7,7 +7,6 @@
  </div>
     <a href="https://www.monkifoto.com/p/headshot-session.html">Click here to find out more information about the headshot and portrait sessions.</a>
     
-   
 
     <div class="separator" style="clear: both; text-align: center;">
     <a href="https://www.monkifoto.com/2019/07/blog-post.html">SHPE</a> || 
@@ -20,3 +19,12 @@
     <img src="https://3.bp.blogspot.com/-LFjHqOVcRzw/WzgHR8pZPOI/AAAAAAAC4SE/Ljc59EaKmC8FwIsWSAWhcMCCojI3bsvPACLcBGAs/s1600/vlad200.jpg" />
     <img src="https://3.bp.blogspot.com/-whFU1u7HO3U/WzgDjp6vR2I/AAAAAAAC4Rg/IaG7Ax6JAuYg_z50NYd1pXpB_onr7p5qwCLcBGAs/s1600/Ioana2002.jpg" />
     </div>
+
+    <div class="row">
+      <div class="column" *ngFor="let row of images">
+        <div  *ngFor="let img of row">
+         <img  [src]="img" style="width: 100%;" alt=""> 
+      </div>
+      </div>  
+   </div>
+  

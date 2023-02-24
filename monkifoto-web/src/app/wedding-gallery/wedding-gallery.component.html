@@ -5,8 +5,18 @@
     <p>Resize the browser window to see the responsive effect.</p>
   </div>
   
+
+  <div class="row">
+    <div class="column" *ngFor="let row of wedding">
+      <div  *ngFor="let img of row">
+       <img  [src]="img" style="width: 100%;" alt=""> 
+    </div>
+    </div>  
+ </div>
+
+
   <!-- Photo Grid -->
-  <div class="row"> 
+  <!-- <div class="row"> 
     <div class="column">
       <img src="../../assets/images/wedding-portfolio/EB6I0363.jpg" style="width:100%">
       <img src="../../assets/images/wedding-portfolio/EB6I0911-Edit-2.jpg" style="width:100%">
@@ -73,5 +83,5 @@
       <img src="../../assets/images/wedding-portfolio/EB6I1021-Edit.jpg" style="width:100%">
       <img src="../../assets/images/wedding-portfolio/MKI06255.jpg" style="width:100%">
     </div>
-  </div>
+  </div> -->
   
