@@ -4,17 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { WeddingGalleryComponent } from './wedding-gallery/wedding-gallery.component';
+import { WeddingGalleryComponent } from './cat-events/wedding-gallery/wedding-gallery.component';
 import { HomeComponent } from './home/home.component';
-import { RealEstateComponent } from './real-estate/real-estate.component';
+import { RealEstateComponent } from './cat-architecture/real-estate/real-estate.component';
 import { InquireComponent } from './inquire/inquire.component';
-import { HeadshotsComponent } from './headshots/headshots.component';
+import { HeadshotsComponent } from './cat-portraits/headshots/headshots.component';
 import { FooterComponent } from './footer/footer.component';
 import { SplitPageModule } from './split-page/split-page.module';
 import { PortfolioComponent } from './split-page/portfolio/portfolio.component';
 import { MainPortfolioComponent } from './split-page/main-portfolio/main-portfolio.component';
 import { SecondaryPortfolioComponent } from './split-page/secondary-portfolio/secondary-portfolio.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SeniorPortraitsComponent } from './cat-portraits/senior-portraits/senior-portraits.component';
+import { StudioComponent } from './cat-studio/studio/studio.component';
+import { ProductComponent } from './cat-studio/product/product.component';
+import { EventsComponent } from './cat-events/events/events.component';
+import { EngagmentsComponent } from './cat-events/engagments/engagments.component';
+import { CorporateComponent } from './cat-events/corporate/corporate.component';
+import { FamilyComponent } from './cat-portraits/family/family.component';
+import { AutomotiveComponent } from './cat-personal/automotive/automotive.component';
+import { LandscapesComponent } from './cat-personal/landscapes/landscapes.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +34,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RealEstateComponent,
     InquireComponent,
     HeadshotsComponent,
-    FooterComponent
+    FooterComponent,
+    SeniorPortraitsComponent,
+    StudioComponent,
+    ProductComponent,
+    EventsComponent,
+    EngagmentsComponent,
+    CorporateComponent,
+    FamilyComponent,
+    AutomotiveComponent,
+    LandscapesComponent
   ],
   imports: [
     BrowserModule,

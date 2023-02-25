@@ -23,6 +23,7 @@
   margin: 0;
   background: hsl( var(--clr-dark) / 0.95);
   backdrop-filter: blur(1.5rem);
+  z-index: 1000;
 }
 
 .primary-navigation a {
