@@ -86,7 +86,7 @@
 }
 
 .link {
-    color: hsl(var(--clr-white));
+    color: hsl(var(--clr-light));
     text-decoration: none;
     position: relative;
     // border: 1px solid hsl(var(--clr-white));
@@ -172,7 +172,8 @@
     }
     
     .section__3{
-        background-image: url(http://source.unsplash.com/2048x1024/?studio);
+        background-image: url("../../assets/images/studio/MKY05379-Edit.jpg");
+        // background-image: url(http://source.unsplash.com/2048x1024/?studio);
         
     }
     

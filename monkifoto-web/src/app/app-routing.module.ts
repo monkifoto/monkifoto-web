@@ -11,6 +11,7 @@ import { EngagmentsComponent } from './cat-events/engagments/engagments.componen
 import { CorporateComponent } from './cat-events/corporate/corporate.component';
 import { EventsComponent } from './cat-events/events/events.component';
 //Portrait
+import { PortraitsComponent } from './cat-portraits/portraits/portraits.component';
 import { HeadshotsComponent } from './cat-portraits/headshots/headshots.component';
 import { SeniorPortraitsComponent } from './cat-portraits/senior-portraits/senior-portraits.component';
 import { FamilyComponent } from './cat-portraits/family/family.component';
@@ -20,6 +21,9 @@ import { ProductComponent } from './cat-studio/product/product.component';
 //Architecture
 import { RealEstateComponent } from './cat-architecture/real-estate/real-estate.component';
 //Personal
+import { PersonalComponent } from './cat-personal/personal/personal.component';
+import { LandscapesComponent } from './cat-personal/landscapes/landscapes.component';
+import { AutomotiveComponent } from './cat-personal/automotive/automotive.component';
 
 
 const routes: Routes = [
@@ -36,7 +40,11 @@ const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'portfolio', component: PortfolioComponent},
   {path:'studio', component: StudioComponent},
-  {path:'product', component: ProductComponent}
+  {path:'product', component: ProductComponent},
+  {path:'portraits', component: PortraitsComponent},
+  {path: 'personal',component: PersonalComponent },
+  {path: 'landscapes',component: LandscapesComponent },
+  {path: 'automotive',component: AutomotiveComponent}
 ];
 
 @NgModule({

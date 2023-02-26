@@ -1,10 +1,12 @@
 @import "/src/styles.scss";
 
 .logo {
-  font-family: var(---ff-sans-cond);
-  font-size: var(--fs-700);
-  color: hsl(var(--clr-light));
-  font-weight: 800;
+  // font-family: var(---ff-sans-cond);
+  // font-size: var(--fs-700);
+  // color: hsl(var(--clr-light));
+  // font-weight: 800;
+  max-height: 8rem;
+  padding:inset;
 }
 
 .logo {
@@ -22,6 +24,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+ 
   background: hsl(var(--clr-dark)/ 0.95);
   backdrop-filter: blur(1.5rem);
   z-index: 1000;
@@ -32,6 +35,7 @@
 }
 
 .primary-navigation a > span {
+  color: hsl(var(--clr-light));
   font-weight: 700;
   margin-right: .5em;
 }
@@ -114,22 +118,6 @@
 
 @media (min-width: 45em) {
 
-//   .primary-header::after {
-//     content: '';
-//     display: block;
-//     position: relative;
-//     height: 2px;
-//     width: 50%;
-//     //margin-right: -2.5rem;
-//     background: hsl( var(--clr-white) / .25);
-//     order: 1;
-// }
-
-// nav {
-//    order: 2;
-// }
-
-
   .primary-navigation {
       margin-block: 2rem;
   }
@@ -141,308 +129,20 @@
   cursor: pointer;
   padding: var(--underline-gap, 1rem) 0;
   border: 0;
-  border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
+  border-bottom: .2rem solid hsl( var(--clr-light) / 0 );
 }
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-  border-color: hsl( var(--clr-white) / .5);
+  border-color: hsl( var(--clr-light) / .5);
 }
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected="true"] {
-  color: hsl( var(--clr-white) / 1);
-  border-color: hsl( var(--clr-white) / 1); 
+  color: hsl( var(--clr-light) / 1);
+  border-color: hsl( var(--clr-light) / 1); 
 }
 
 
 
 
-
-
-
-
-
-
-
-// header {
-//   text-align: center;
-//   position: fixed;
-//   z-index: 999;
-//   width: 100%;
-// }
-
-// .numbered-title {
-//   font-family: var(--ff-sans-cond);
-//   font-size: var(--fs-500);
-//   text-transform: uppercase;
-//   letter-spacing: 4.72px; 
-// }
-
-// .numbered-title span {
-//   margin-right: .5em;
-//   font-weight: 700;
-//   color: hsl( var(--clr-white) / .25);
-// }
-
-// .primary-navigation {
-//   --gap: 8rem;
-//   --underline-gap: 2rem;
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// @media (max-width: 35rem) {
-//   .primary-navigation {
-//       --underline-gap: .5rem;
-//       position: fixed;
-//       z-index: 1000;
-//       inset: 0 0 0 30%;
-//       background: black;
-//       list-style: none;
-//       padding: min(20rem, 15vh) 2rem;
-//       margin: 0;
-//       flex-direction: column;
-//   }
-// }
-
-// .primary-navigation.underline-indicators > .active {
-//   border: 0;
-// }
-
-// .primary-navigation a {
-//   text-decoration: none;
-// }
-
-// .primary-navigation a > span {
-//   font-weight: 700;
-//   margin-right: .5em;
-// }
-
-
-// .underline-indicators > * {
-//   cursor: pointer;
-//   padding: var(--underline-gap, 1rem) 0;
-//   border: 0;
-//   border-bottom: .2rem solid hsl( var(--clr-white) / 0 );
-// }
-
-// .underline-indicators > *:hover,
-// .underline-indicators > *:focus {
-//   border-color: hsl( var(--clr-white) / .5);
-// }
-
-// .underline-indicators > .active,
-// .underline-indicators > [aria-selected="true"] {
-//   color: hsl( var(--clr-white) / 1);
-//   border-color: hsl( var(--clr-white) / 1); 
-// }
-
-// .nav-toggle {
-//   position: absolute;
-//   display: none;
-// }
-
-// .nav-toggle-label {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   margin-left: 1em;
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-// }
-
-// .nav-toggle-label span,
-// .nav-toggle-label span::before,
-// .nav-toggle-label span::after {
-//   display: block;
-//   background: white;
-//   height: 2px;
-//   width: 2em;
-//   border-radius: 2px;
-//   position: relative;
-// }
-
-// .nav-toggle-label span::before,
-// .nav-toggle-label span::after {
-//   content: "";
-//   position: absolute;
-// }
-
-// .nav-toggle-label span::before {
-//   bottom: 7px;
-// }
-
-// .nav-toggle-label span::after {
-//   top: 7px;
-// }
-
-// nav {
-//   position: relative;
-//   text-align: left;
-//   top: 100%;
-//   left: 0;
-//   background: hsl(var(--clr-white) / 0.075);
-//   // background: hsl(0 0% 100% / 0.1);
-//   width: 100%;
-//   transform: scale(1, 0);
-//   transform-origin: top;
-//   transition: transform 400ms ease-in-out;
-//   z-index: 990;
-// }
-
-// nav ul {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
-
-// nav li {
-//   margin-bottom: 1em;
-//   margin-left: 1em;
-// }
-
-// nav a {
-//   color: white;
-//   text-decoration: none;
-//   font-size: 1.2rem;
-//   text-transform: uppercase;
-//   opacity: 0;
-//   transition: opacity 150ms ease-in-out;
-// }
-
-// nav a:hover {
-//   color: hsl(var(--clr-white) / 0.5);
-// }
-
-// .nav-toggle:checked ~ nav {
-//   transform: scale(1, 1);
-// }
-
-// .nav-toggle:checked ~ nav a {
-//   opacity: 1;
-//   transition: opacity 250ms ease-in-out 250ms;
-// }
-
-
-
-// .numbered-title {
-//   font-family: var(--ff-sans-cond);
-//   font-size: var(--fs-500);
-//   text-transform: uppercase;
-//   letter-spacing: 4.72px;
-// }
-
-// .numbered-title span {
-//   margin-right: 0.5em;
-//   font-weight: 700;
-//   color: hsl(var(--clr-white) / 0.25);
-// }
-// /*    show navigation when not on mobile*/
-// @media screen and (min-width: 500px) {
-//   .nav-toggle-label {
-//     display: none;
-//   }
-
-//   header {
-//     display: grid;
-//     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-//   }
-
-//   .logo {
-//     grid-column: 2 / 3;
-//   }
-
-//   nav {
-//     all: unset;
-//     /* this causes issues with Edge, since it's unsupported */
-
-//     /* the following lines are not from my video, but add Edge support */
-//     position: relative;
-//     text-align: left;
-//     transition: none;
-//     transform: scale(1, 1);
-//     background: none;
-//     top: initial;
-//     left: initial;
-//     /* end Edge support stuff */
-
-//     grid-column: 3 / 4;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-end;
-//     align-items: center;
-//   }
-
-//   nav ul {
-//     display: flex;
-//   }
-
-//   nav a {
-//     opacity: 1;
-//   }
-//   nav li {
-//     margin-left: 3em;
-//     margin-bottom: 0;
-//   }
-
-//   nav a {
-//     opacity: 1;
-//     position: relative;
-//   }
-
-//   nav a::before {
-//     content: "";
-//     display: block;
-//     height: 2px;
-//     background: hsl(var(--clr-white)/ .5);
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     transform: scale(0, 1);
-//     transform: scaleX(0);
-//     transform-origin: right;
-//     transition:transform 250ms ease-in;
-//   }
-
-//   nav a:hover::before {
-//     transform:scaleX(1);
-//     transform-origin:left;
-//   }
-// }
-
-
-// .primary-navigation {
-//   --underline-gap: 2rem;
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-
-
-// @media (max-width: 35rem) {
-//   .primary-navigation {
-//       --underline-gap: 2rem;
-//       position: fixed;
-//       z-index: 1000;
-//       inset: 0 0 0 30%;
-//       background: black;
-//       list-style: none;
-//       padding: min(20rem, 15vh) 2rem;
-//       margin: 0;
-//       flex-direction: column;
-//   }
-// }
-
-// .primary-navigation a {
-//   text-decoration: none;
-// }
-
-// .primary-navigation a > span {
-//   font-weight: 700;
-//   margin-right: .5em;
-// }
