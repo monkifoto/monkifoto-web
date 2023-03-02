@@ -15,15 +15,33 @@
 }
 
 .imageCoverTitle{
- position: absolute;
- top:5rem;
- left: 10rem;  
-font-size: var(--fs-900);
-color: hsl(var(--clr-dark));;
-display: block;
-text-decoration: none;
-text-transform: uppercase;
+    position: absolute;
+    top:5rem;
+    left: 10rem;  
+   font-size: var(--fs-900);
+   color: hsl(var(--clr-dark));;
+   display: block;
+   text-decoration: none;
+   text-transform: uppercase;
+   }
+
+@media screen and (max-width:35rem) {
+    .mainImageContainer{
+        background-position: center center;
+        height: auto;
+        width: 100vw;
+        aspect-ratio: 12/9;
+    }
+
+    .imageCoverTitle{
+        top:2rem;
+        left: 2rem;  
+        font-size: var(--fs-800);
+        color: hsl(var(--clr-dark));;
+    }
 }
+
+
 
 .media-scroller {
     --_spacer: 1rem;
