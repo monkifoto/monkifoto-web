@@ -20,6 +20,8 @@ import { StudioComponent } from './cat-studio/studio/studio.component';
 import { ProductComponent } from './cat-studio/product/product.component';
 //Architecture
 import { RealEstateComponent } from './cat-architecture/real-estate/real-estate.component';
+import { ArchitectureComponent } from './cat-architecture/architecture/architecture.component';
+import { CommercialComponent } from './cat-architecture/commercial/commercial.component';
 //Personal
 import { PersonalComponent } from './cat-personal/personal/personal.component';
 import { LandscapesComponent } from './cat-personal/landscapes/landscapes.component';
@@ -44,7 +46,10 @@ const routes: Routes = [
   {path:'portraits', component: PortraitsComponent},
   {path: 'personal',component: PersonalComponent },
   {path: 'landscapes',component: LandscapesComponent },
-  {path: 'automotive',component: AutomotiveComponent}
+  {path: 'automotive',component: AutomotiveComponent},
+  {path: 'architecture', component: ArchitectureComponent},
+  {path: 'commercial', component: CommercialComponent}
+
 ];
 
 @NgModule({

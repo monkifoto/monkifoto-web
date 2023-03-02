@@ -1,0 +1,115 @@
+.mainImageContainer{
+    position: relative;
+  
+    background-image: url("../../../assets/images/portraits/MKY_7050-Edit-bw.jpg");
+    background-size: cover;
+    background-position: center bottom -7rem;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    flex-direction: row;
+ 
+}
+
+.imageCoverTitle{
+ position: absolute;
+ top:5rem;
+ left: 10rem;  
+font-size: var(--fs-900);
+color: hsl(var(--clr-dark));;
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.media-scroller {
+    --_spacer: 1rem;
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+  
+    padding: 0 var(--_spacer) var(--_spacer);
+  
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+  
+  .media-scroller--with-groups {
+    grid-auto-columns: 80%;
+  }
+  
+ 
+  .media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    padding: var(--_spacer);
+    background: var(--surface-2);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-2);
+  }
+  
+  .media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  
+  .snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);
+  }
+  
+  .snaps-inline > * {
+    scroll-snap-align: start;
+  }
+  
+  /* general styling */
+  
+  .container {
+    inline-size: min(100% - 4rem, 70rem);
+    margin-inline: auto;
+  }
+  
+  .flow {
+    display: grid;
+    gap: 1rem;
+  }
+  
+.navigation-indicators > * {
+  width: 1rem;
+  height: 2px;
+  background: white;
+  opacity: 0.5;
+}
+
+.media-scroller:has(.media-group:target)
+  .navigation-indicators
+  > *:nth-child(1) {
+  opacity: 0.5;
+}
+
+.navigation-indicators > *:nth-child(1),
+.media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1) {
+  opacity: 1;
+}
+
+.media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2) {
+  opacity: 1;
+}
+
+.media-group:nth-child(3):target ~ .navigation-indicators > *:nth-child(3) {
+  opacity: 1;
+}
+
+.media-group:nth-child(4):target ~ .navigation-indicators > *:nth-child(4) {
+  opacity: 1;
+}
+
+.media-scroller:hover .navigation-indicators {
+  opacity: 1;
+}

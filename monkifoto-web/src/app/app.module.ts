@@ -25,6 +25,8 @@ import { AutomotiveComponent } from './cat-personal/automotive/automotive.compon
 import { LandscapesComponent } from './cat-personal/landscapes/landscapes.component';
 import { PortraitsComponent } from './cat-portraits/portraits/portraits.component';
 import { PersonalComponent } from './cat-personal/personal/personal.component';
+import { ArchitectureComponent } from './cat-architecture/architecture/architecture.component';
+import { CommercialComponent } from './cat-architecture/commercial/commercial.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { PersonalComponent } from './cat-personal/personal/personal.component';
     AutomotiveComponent,
     LandscapesComponent,
     PortraitsComponent,
-    PersonalComponent
+    PersonalComponent,
+    ArchitectureComponent,
+    CommercialComponent
   ],
   imports: [
     BrowserModule,
