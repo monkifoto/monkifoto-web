@@ -3,6 +3,7 @@
     margin-top: 0;
     display: flex;
     z-index: 100;
+    width: 100%;
 }
 
 .section{
@@ -19,7 +20,8 @@
     background-blend-mode: multiply;
     transition-duration: 1000ms;
     transition-property: all;
-    width: 20vw;
+    // width: 20vw;
+    flex-basis: 25%;
    
 
 }

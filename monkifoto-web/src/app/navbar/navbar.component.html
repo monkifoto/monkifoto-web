@@ -7,12 +7,12 @@
   <nav>
       <ul id="primary-navigation" class="primary-navigation underline-indicators flex">
           <li class="active"><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/home" routerLinkActive="active"><span>00</span>Home</a>
-            <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/events" routerLinkActive="active"><span>01</span>Events</a>
-          <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/portraits" routerLinkActive="active"><span>02</span>Portraits</a>
+            <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/events" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span>01</span>Events</a>
+          <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/portraits" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span>02</span>Portraits</a>
           <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/studio" routerLinkActive="active"><span>03</span>Studio</a>
-            <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/architecture" routerLinkActive="active"><span>04</span>Architecture</a>
-              <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/personal" routerLinkActive="active"><span>05</span>Personal</a>
-              <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/inquire" routerLinkActive="active"><span>06</span>Inquire</a>
+            <!-- <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/architecture" routerLinkActive="active"><span>04</span>Architecture</a> -->
+              <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/personal" routerLinkActive="active"><span>04</span>Personal</a>
+              <li><a class="ff-sans-cond uppercase text-accent  letter-spacing-2" href="#"  routerLink="/inquire" routerLinkActive="active"><span>05</span>Inquire</a>
       </ul>
   </nav>
 </header>

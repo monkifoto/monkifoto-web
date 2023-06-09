@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { CommercialComponent } from './cat-architecture/commercial/commercial.co
 @NgModule({
   declarations: [
     AppComponent,
+
     NavbarComponent,
     WeddingGalleryComponent,
     HomeComponent,
@@ -57,6 +59,7 @@ import { CommercialComponent } from './cat-architecture/commercial/commercial.co
     BrowserModule,
     AppRoutingModule,
     SplitPageModule,
+    RouterModule,
    
 
   ],
