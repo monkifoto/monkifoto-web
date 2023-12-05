@@ -1,17 +1,23 @@
 {
   "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
+    "rules": "y",
+    "indexes": "y"
   },
   "hosting": {
-    "public": "dist/monkifoto-web",
+    "public": "monkifoto-web _static",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   },
   "storage": {
-    "rules": "storage.rules"
+    "rules": "y"
   }
 }
