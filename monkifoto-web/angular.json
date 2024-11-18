@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "monkifoto-web:build:production"
+              "buildTarget": "monkifoto-web:build:production"
             },
             "development": {
-              "browserTarget": "monkifoto-web:build:development"
+              "buildTarget": "monkifoto-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "monkifoto-web:build"
+            "buildTarget": "monkifoto-web:build"
           }
         },
         "test": {
